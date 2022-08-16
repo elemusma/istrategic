@@ -1,0 +1,106 @@
+.text-white * {
+  color: white;
+}
+
+.text-white a:hover {
+  color: white;
+}
+
+.text-accent,
+a {
+  color: var(--accent-primary);
+}
+
+.text-accent-secondary {
+  color: var(--accent-secondary);
+}
+
+.text-accent-tertiary {
+  color: var(--accent-tertiary);
+}
+
+.text-accent {
+  color: var(--accent-primary);
+}
+
+.text-gray {
+  color: #585556;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 3px black;
+}
+
+.text-black {
+  color: black;
+}
+
+a.text-black:hover {
+  color: black;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.ls-1 {
+  letter-spacing: 1em;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* html,
+body {
+  font-family: "proxima_novaregular";
+}
+
+.light {
+  font-family: "proxima_nova_altlight";
+}
+
+.thin {
+  font-family: "proxima_novathin";
+}
+
+.bold,
+strong {
+  font-family: "proxima_novabold";
+} */
+
+blockquote {
+  font-size: 90%;
+}
+
+
+p {
+  font-size: 120%;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: quatro-slab, serif;
+  font-weight: 700;
+}
+
+html,
+body {
+  font-family: quatro-slab, serif;
+  font-weight: 400;
+}
+
+/* Quatro Slab Bold
+font-family: quatro-slab, serif;
+font-weight: 700;
+font-style: normal; */

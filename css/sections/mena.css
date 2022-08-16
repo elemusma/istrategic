@@ -1,0 +1,9 @@
+@media only screen and (min-width:768px) {
+    .section-intro-sections:nth-child(odd) .row {
+        flex-direction: row-reverse;
+    }
+}
+
+/* .section-intro-sections:last-child {
+    padding-bottom: 0 !important;
+} */
