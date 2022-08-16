@@ -2,6 +2,8 @@
 
 get_header();
 
+// echo 'hello';
+
 // start of intro
 if(have_rows('intro_content')): while(have_rows('intro_content')): the_row();
 $link = get_sub_field('link');
@@ -51,12 +53,20 @@ endwhile; endif;
 if(have_rows('vision_content')): while(have_rows('vision_content')): the_row();
 $bgImg = get_sub_field('background_image');
 $pretitle = get_sub_field('pretitle');
+$ID = sanitize_title_with_dashes($pretitle);
 $content = get_sub_field('content');
 
 
-echo '<section class="position-relative bg-attachment d-flex align-items-center" style="background:url(' . wp_get_attachment_image_url($bgImg['id'], 'full') . ');background-size:contain;background-position:right;background-repeat:no-repeat;min-height:550px;height:55vh;">';
+echo '<section class="position-relative bg-attachment d-flex align-items-center bg-img" style="background:url(' . wp_get_attachment_image_url($bgImg['id'], 'full') . ');background-size:contain;background-position:right;background-repeat:no-repeat;min-height:550px;height:55vh;" id="' . $ID . '">';
 echo '<div class="container">';
 echo '<div class="row">';
+
+if($bgImg){
+    echo '<div class="col-12 d-md-none d-block pb-4 pt-5">';
+    echo wp_get_attachment_image($bgImg['id'],'full','',['class'=>'w-100 h-100']);
+    echo '</div>';
+}
+
 echo '<div class="col-md-5">';
 
 echo '<h2 class="">' . $pretitle . '</h2>';

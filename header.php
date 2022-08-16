@@ -100,21 +100,21 @@ wp_nav_menu(array(
 // 'menu_class'=>'menu d-flex flex-wrap list-unstyled justify-content-end mb-0'
 // ));
 
-echo '<div class="pt-5"></div>';
+// echo '<div class="pt-5"></div>';
 
-$galleryFooter = get_field('footer_gallery','options');
+// $galleryFooter = get_field('footer_gallery','options');
 
-if( $galleryFooter ): 
-echo '<div class="d-flex pb-5">';
-foreach( $galleryFooter as $image ):
-// echo '<div class="col-12 text-center">';
-echo wp_get_attachment_image($image['id'], 'full','',['class'=>'w-auto img-portfolio ml-2 mr-2','style'=>'height:45px;object-fit:contain;'] );
-echo '<div class="pb-3"></div>';
-echo '<br>';
+// if( $galleryFooter ): 
+// echo '<div class="d-flex pb-5">';
+// foreach( $galleryFooter as $image ):
+// // echo '<div class="col-12 text-center">';
+// echo wp_get_attachment_image($image['id'], 'full','',['class'=>'w-auto img-portfolio ml-2 mr-2','style'=>'height:45px;object-fit:contain;'] );
+// echo '<div class="pb-3"></div>';
+// echo '<br>';
+// // echo '</div>';
+// endforeach; 
 // echo '</div>';
-endforeach; 
-echo '</div>';
-endif;
+// endif;
 
 ?>
 </div>
@@ -156,11 +156,11 @@ echo '<div class="hero-content position-relative text-center d-flex justify-cont
 echo wp_get_attachment_image($image['id'],'full','',['class'=>'w-100 h-100 position-absolute','style'=>'top:0;left:0;object-fit:cover;']);
 
 echo '<div>';
-echo '<h2 class="pt-3 pb-3 mb-0 position-relative text-center text-accent-secondary h1" style="letter-spacing:0.2em;text-shadow:1px 1px rgba(255,255,255,.5);">' . get_the_title() . '</h2>';
+echo '<h2 class="pt-3 pb-3 mb-0 position-relative text-center text-accent-secondary h1 heading-title" style="letter-spacing:0.2em;text-shadow:1px 1px rgba(255,255,255,.5);">' . get_the_title() . '</h2>';
 
 
 echo '<div class="pr-3 pl-3 pb-2 d-inline-block text-white position-relative" style="">';
-echo '<h3 class="h2 text-shadow text-uppercase">' . $subtitle . '</h3>';
+echo '<h3 class="h2 text-shadow text-uppercase heading-subtitle">' . $subtitle . '</h3>';
 echo '</div>';
 echo '</div>';
 

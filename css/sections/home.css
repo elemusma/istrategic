@@ -1,3 +1,28 @@
+/* start of header */
+@media only screen and (max-width:767px) {
+    .hero-content {
+        height: 45vh !important;
+        min-height: 350px !important;
+    }
+
+    .heading-title {
+        font-size: 2rem;
+    }
+
+    .heading-subtitle {
+        font-size: 1.35rem;
+    }
+}
+
+/* end of header */
+
+@media only screen and (max-width:767px) {
+    .bg-img {
+        background-image: none !important;
+        height: auto !important;
+    }
+}
+
 /* start of bars */
 .col-full-background,
 .img-full-background {
