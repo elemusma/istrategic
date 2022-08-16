@@ -2,8 +2,6 @@
 
 get_header();
 
-// echo 'hello';
-
 // start of intro
 if(have_rows('intro_content')): while(have_rows('intro_content')): the_row();
 $link = get_sub_field('link');
@@ -57,7 +55,7 @@ $ID = sanitize_title_with_dashes($pretitle);
 $content = get_sub_field('content');
 
 
-echo '<section class="position-relative bg-attachment d-flex align-items-center bg-img" style="background:url(' . wp_get_attachment_image_url($bgImg['id'], 'full') . ');background-size:contain;background-position:right;background-repeat:no-repeat;min-height:550px;height:55vh;" id="' . $ID . '">';
+echo '<section class="position-relative bg-attachment d-flex align-items-center bg-img testing-class" style="background:url(' . wp_get_attachment_image_url($bgImg['id'], 'full') . ');background-size:contain;background-position:right;background-repeat:no-repeat;min-height:550px;height:55vh;" id="' . $ID . '">';
 echo '<div class="container">';
 echo '<div class="row">';
 
